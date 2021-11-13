@@ -38,10 +38,10 @@ func main() {
 	fmt.Println("Is:", calculateTotal(arrPrices))
 }
 
-func calculateTotal(p []string) int64 {
-	var total int64 = 0
+func calculateTotal(p []string) float64 {
+	var total float64 = 0
 	for _, value := range p {
-		i, _ := strconv.ParseInt(value, 10, 64)
+		i, _ := strconv.ParseFloat(value, 64)
 		total = total + i
 	}
 	return total
